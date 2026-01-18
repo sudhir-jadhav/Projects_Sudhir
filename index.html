@@ -1,126 +1,339 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sudhir Jadhav | Application Engineer</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sudhir Jadhav | Application Engineer (Japan)</title>
 
-  <meta name="description"
-        content="Sudhir Jadhav – Application Engineer in Japan. Experience in DevOps, AWS, Docker, Kubernetes, Python, GenAI projects Genga and FDUA.">
+  <meta name="description" content="Sudhir Jadhav – Application Engineer in Japan. DevOps + Cloud (AWS), Docker, Kubernetes, CI/CD, Python. Projects: Genga, FDUA, Komtrax." />
+  <meta name="robots" content="index,follow" />
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+  <!-- Animated background -->
+  <script src="script.js" defer></script>
 
-  <header>
-    <nav class="navbar">
-      <h1>Sudhir Jadhav</h1>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+  <header class="header">
+    <div class="container">
+      <div class="topbar">
+        <div class="brand">
+          <div class="brand__name">Sudhir Jadhav</div>
+          <div class="brand__role">Application Engineer • DevOps • Cloud (AWS) • Python</div>
+        </div>
+
+        <div class="topbar__actions">
+          <a class="btn btn--ghost" href="#contact">Contact</a>
+          <a class="btn" href="https://www.linkedin.com/in/sudhir-jadhav-8ab41b244" target="_blank" rel="noopener noreferrer">
+            LinkedIn
+          </a>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="#summary">Summary</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <section class="hero">
-    <img src="images/sudhirprofile.jpg" alt="Sudhir Jadhav">
-    <h2>Application Engineer / DevOps Engineer</h2>
-    <p>Japan | AWS | Docker | Kubernetes | Python | GenAI</p>
-
-    <a class="btn"
-       href="https://www.linkedin.com/in/sudhir-jadhav-8ab41b244"
-       target="_blank"
-       rel="noopener noreferrer">
-      LinkedIn
-    </a>
-  </section>
-
   <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__left">
+          <h1>Hi, I’m <span class="accent">Sudhir</span>.</h1>
+          <p class="hero__subtitle">
+            Application Engineer in Japan with <strong>five-plus years</strong> of IT experience across
+            <strong>DevOps, cloud infrastructure, and application development</strong>.
+          </p>
 
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        I am an Application Engineer working in Japan with over five years of IT experience.
-        I have strong experience in DevOps, cloud platforms, and application development.
-      </p>
-      <p>
-        I enjoy working in the Japanese work culture and am looking for opportunities
-        that offer growth and new technical challenges.
-      </p>
-    </section>
+          <div class="hero__chips">
+            <span class="chip">Japan (Chiba)</span>
+            <span class="chip">AWS</span>
+            <span class="chip">Docker</span>
+            <span class="chip">Kubernetes</span>
+            <span class="chip">CI/CD</span>
+            <span class="chip">Python</span>
+            <span class="chip">GenAI + OCR</span>
+          </div>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul class="skills">
-        <li>AWS (EC2, S3, Lambda, RDS)</li>
-        <li>Docker & Kubernetes</li>
-        <li>CI/CD (Git, GitHub, Jenkins)</li>
-        <li>Python</li>
-        <li>SQL</li>
-        <li>GCP</li>
-        <li>GenAI & OCR</li>
-      </ul>
-    </section>
+          <div class="hero__links">
+            <a class="btn" href="#projects">View Projects</a>
+            <a class="btn btn--ghost" href="https://github.com/sudhir-jadhav" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
 
-    <section id="projects">
-      <h2>Projects</h2>
+          <div class="hero__meta">
+            <div><span class="muted">Visa:</span> Engineer / Specialist in Humanities (renewal in process)</div>
+            <div><span class="muted">Open to:</span> Anywhere in Japan</div>
+            <div><span class="muted">Start:</span> Within ~1 month + 15 days after offer</div>
+          </div>
+        </div>
 
-      <div class="project">
-        <h3>Genga</h3>
-        <p>
-          Generative AI and OCR-based automation system for administrative and
-          contract processing in the banking domain.
-        </p>
-      </div>
+        <div class="hero__right">
+          <div class="card card--profile">
+            <img class="profile__img" src="images/sudhirprofile.jpg" alt="Sudhir Jadhav profile photo" />
+            <div class="profile__info">
+              <div class="profile__name">Sudhir Jadhav</div>
+              <div class="profile__role">Application Engineer</div>
+              <div class="profile__line">
+                <span class="muted">LinkedIn:</span>
+                <a href="https://www.linkedin.com/in/sudhir-jadhav-8ab41b244" target="_blank" rel="noopener noreferrer">
+                  sudhir-jadhav
+                </a>
+              </div>
+            </div>
+          </div>
 
-      <div class="project">
-        <h3>FDUA Web Application</h3>
-        <p>
-          Python-based platform for Financial Data Utilization Association to share AI use cases.
-          Built using Docker, Firebase, SQL, and deployed on Google Cloud Platform.
-        </p>
-      </div>
-
-      <div class="project">
-        <h3>Komtrax</h3>
-        <p>
-          Telematics-based monitoring system for Komatsu equipment providing
-          real-time monitoring and productivity insights.
-        </p>
-      </div>
-
-      <div class="project">
-        <h3>Banking Project (KDDI)</h3>
-        <p>
-          Banking application focused on security and financial workflows
-          using Python in an Agile environment.
-        </p>
+          <div class="card card--quick">
+            <h2 class="card__title">Quick Highlights</h2>
+            <ul class="bullets">
+              <li>Hands-on with AWS services (EC2, S3, Lambda, RDS) and CI/CD pipelines.</li>
+              <li>Built and delivered web apps with Python, Docker, SQL and cloud deployment (GCP).</li>
+              <li>Worked on GenAI + OCR automation for contract and admin workflows (Genga).</li>
+              <li>Experience across India + Japan (onsite assignment and full-time Japan role).</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>
-        LinkedIn:
-        <a href="https://www.linkedin.com/in/sudhir-jadhav-8ab41b244"
-           target="_blank"
-           rel="noopener noreferrer">
-          linkedin.com/in/sudhir-jadhav
-        </a>
-      </p>
+    <!-- SUMMARY -->
+    <section id="summary" class="section">
+      <div class="container">
+        <h2 class="section__title">Professional Summary</h2>
+        <div class="grid-2">
+          <div class="card">
+            <h3 class="card__subtitle">What I do</h3>
+            <p>
+              I work across <strong>application development</strong> and <strong>DevOps</strong>:
+              building reliable systems, automating deployments, and improving developer workflows.
+              I enjoy solving real operational problems with clean, practical engineering.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3 class="card__subtitle">What I’m looking for</h3>
+            <p>
+              A dynamic environment with strong engineering culture where I can grow further in
+              <strong>cloud-native development</strong>, <strong>automation</strong>, and
+              <strong>GenAI-enabled products</strong>.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
+    <!-- SKILLS -->
+    <section id="skills" class="section section--alt">
+      <div class="container">
+        <h2 class="section__title">Skills</h2>
+
+        <div class="skills-grid">
+          <div class="card">
+            <h3 class="card__subtitle">Cloud</h3>
+            <ul class="tags">
+              <li>AWS</li><li>EC2</li><li>S3</li><li>Lambda</li><li>RDS</li>
+              <li>GCP (Deployment)</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3 class="card__subtitle">DevOps</h3>
+            <ul class="tags">
+              <li>Docker</li><li>Kubernetes</li><li>CI/CD</li><li>Jenkins</li>
+              <li>Git</li><li>GitHub</li><li>Maven</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3 class="card__subtitle">Development</h3>
+            <ul class="tags">
+              <li>Python</li><li>SQL</li><li>REST APIs</li><li>Agile</li>
+              <li>Firebase</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3 class="card__subtitle">AI / Automation</h3>
+            <ul class="tags">
+              <li>GenAI</li><li>OCR</li><li>Document Processing</li><li>Summarization</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <div class="container">
+        <h2 class="section__title">Experience</h2>
+
+        <div class="timeline">
+          <div class="timeline__item card">
+            <div class="timeline__top">
+              <div>
+                <div class="timeline__role">Application Engineer</div>
+                <div class="timeline__company">Trust (Japan)</div>
+              </div>
+              <div class="timeline__date">Jan 2025 – Present</div>
+            </div>
+            <ul class="bullets">
+              <li>Contributed to GenAI + OCR automation projects and web applications.</li>
+              <li>Worked with Python, Docker, SQL, and cloud deployment environments.</li>
+              <li>Delivered features with focus on reliability, maintainability, and business outcomes.</li>
+            </ul>
+          </div>
+
+          <div class="timeline__item card">
+            <div class="timeline__top">
+              <div>
+                <div class="timeline__role">DevOps Engineer / Application Developer (Onsite)</div>
+                <div class="timeline__company">Fujitsu (Japan)</div>
+              </div>
+              <div class="timeline__date">Apr 2023 – Dec 2024</div>
+            </div>
+            <ul class="bullets">
+              <li>Worked on Komtrax-related systems and supported delivery workflows.</li>
+              <li>Used AWS services, CI/CD, container tools, and collaboration practices.</li>
+              <li>Improved build/release processes and supported development teams.</li>
+            </ul>
+          </div>
+
+          <div class="timeline__item card">
+            <div class="timeline__top">
+              <div>
+                <div class="timeline__role">DevOps Engineer / Application Developer</div>
+                <div class="timeline__company">Fujitsu (India)</div>
+              </div>
+              <div class="timeline__date">Feb 2022 – Mar 2023</div>
+            </div>
+            <ul class="bullets">
+              <li>Worked on a banking-related project for KDDI, focusing on security and workflows.</li>
+              <li>Hands-on development in Python and Agile delivery.</li>
+              <li>Used Git/GitHub, Jenkins, and cloud tools as needed in the project lifecycle.</li>
+            </ul>
+          </div>
+
+          <div class="timeline__item card">
+            <div class="timeline__top">
+              <div>
+                <div class="timeline__role">Software Engineer Trainee</div>
+                <div class="timeline__company">CapitalVia (India)</div>
+              </div>
+              <div class="timeline__date">2020 – 2022</div>
+            </div>
+            <ul class="bullets">
+              <li>Started professional career and built fundamentals in software development and teamwork.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section section--alt">
+      <div class="container">
+        <h2 class="section__title">Projects</h2>
+
+        <div class="projects-grid">
+          <div class="card">
+            <h3 class="project__title">Genga</h3>
+            <p class="muted">GenAI + OCR • Document Processing • Automation</p>
+            <ul class="bullets">
+              <li>Automates contract/admin tasks: extraction, normalization, verification support, and output documents.</li>
+              <li>Helps summarize complex contract text and extract conditions for faster understanding.</li>
+              <li>Improves operational efficiency in banking administrative workflows.</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3 class="project__title">FDUA Web Application</h3>
+            <p class="muted">Python • Docker • Firebase • SQL • GCP</p>
+            <ul class="bullets">
+              <li>Platform where multiple companies share AI use cases and collaborate.</li>
+              <li>Implemented features and deployment flow with Docker and cloud services.</li>
+              <li>Used SQL and Firebase for data management and app functionality.</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3 class="project__title">Komtrax</h3>
+            <p class="muted">Telematics • Monitoring • Reliability</p>
+            <ul class="bullets">
+              <li>Real-time remote monitoring for Komatsu equipment: location, performance, maintenance insights.</li>
+              <li>Supports productivity and security improvements through data-driven operations.</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3 class="project__title">Banking Project (KDDI)</h3>
+            <p class="muted">Python • Security • Agile</p>
+            <ul class="bullets">
+              <li>Banking-focused work with attention to security and financial workflows.</li>
+              <li>Built features and supported delivery using Agile practices.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section">
+      <div class="container">
+        <h2 class="section__title">Education & Certifications</h2>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3 class="card__subtitle">Education</h3>
+            <ul class="bullets">
+              <li>Bachelor of Engineering (Completed 2020)</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3 class="card__subtitle">Language</h3>
+            <ul class="bullets">
+              <li>JLPT N4</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section--alt">
+      <div class="container">
+        <h2 class="section__title">Contact</h2>
+
+        <div class="card">
+          <p>
+            You can reach me via LinkedIn:
+            <a href="https://www.linkedin.com/in/sudhir-jadhav-8ab41b244" target="_blank" rel="noopener noreferrer">
+              linkedin.com/in/sudhir-jadhav-8ab41b244
+            </a>
+          </p>
+          <p class="muted small">
+            (Tip: If you want to show your email here publicly, tell me and I’ll add it safely.)
+          </p>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer>
-    <p>© Sudhir Jadhav</p>
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>© Sudhir Jadhav</div>
+      <div class="footer__links">
+        <a href="https://github.com/sudhir-jadhav" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/sudhir-jadhav-8ab41b244" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </div>
   </footer>
-
-  <!-- Animated background -->
-  <script src="script.js"></script>
-
 </body>
 </html>
