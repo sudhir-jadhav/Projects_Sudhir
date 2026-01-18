@@ -1,7 +1,6 @@
 :root{
   --bg:#0b0f14;
   --card: rgba(255,255,255,0.06);
-  --card2: rgba(255,255,255,0.08);
   --text:#e8eef6;
   --muted: rgba(232,238,246,0.72);
   --line: rgba(255,255,255,0.14);
@@ -11,6 +10,7 @@
 
 *{ box-sizing:border-box; margin:0; padding:0; }
 html{ scroll-behavior:smooth; }
+
 body{
   font-family: Arial, Helvetica, sans-serif;
   background: radial-gradient(1200px 700px at 20% -10%, rgba(76,195,255,0.20), rgba(0,0,0,0)),
@@ -96,9 +96,8 @@ a:hover{ opacity: 0.9; }
   line-height: 1.15;
   margin-bottom: 10px;
 }
-.accent{
-  color: var(--accent);
-}
+.accent{ color: var(--accent); }
+
 .hero__subtitle{
   color: var(--muted);
   font-size: 16px;
@@ -125,15 +124,6 @@ a:hover{ opacity: 0.9; }
   gap: 10px;
   margin-bottom: 14px;
 }
-
-.hero__meta{
-  display:grid;
-  gap: 6px;
-  color: var(--muted);
-  font-size: 13px;
-}
-.muted{ color: var(--muted); }
-.small{ font-size: 12px; }
 
 .section{
   padding: 32px 0;
@@ -162,16 +152,21 @@ a:hover{ opacity: 0.9; }
   padding: 16px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.22);
 }
+
 .card--profile{
   padding: 0;
   overflow:hidden;
 }
+
+/* ✅ FIX: profile photo crop */
 .profile__img{
   width:100%;
-  height: 240px;
+  height: 290px;          /* more height */
   object-fit: cover;
+  object-position: center 20%; /* shift image down to keep head visible */
   display:block;
 }
+
 .profile__info{
   padding: 14px 14px 16px 14px;
 }
@@ -306,6 +301,8 @@ a:hover{ opacity: 0.9; }
 }
 .footer__links a:hover{ color: var(--text); }
 
+.muted{ color: var(--muted); }
+
 .animated-bg{
   position: fixed;
   inset: 0;
@@ -322,4 +319,5 @@ a:hover{ opacity: 0.9; }
   .projects-grid{ grid-template-columns: 1fr; }
   .grid-2{ grid-template-columns: 1fr; }
   .hero h1{ font-size: 34px; }
+  .profile__img{ height: 320px; object-position: center 18%; }
 }

@@ -4,6 +4,7 @@ bg.className = "animated-bg";
 document.body.prepend(bg);
 
 let t = 0;
+
 function animate() {
   t += 0.003;
 
@@ -20,4 +21,5 @@ function animate() {
 
   requestAnimationFrame(animate);
 }
+
 animate();
